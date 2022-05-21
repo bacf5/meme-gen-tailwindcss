@@ -1,8 +1,13 @@
+import { useState } from 'react';
+
 export default function Meme({ ...props }) {
-  console.log(props);
+  const [memeImage, setMemeImage] = useState('');
 
   function newMemeHandler() {
-    console.log(props);
+    const memeArray = props.item.data.memes;
+    const numRandom = Math.floor(Math.random() * memeArray.length);
+    console.log(memeArray[numRandom].url);
+    return setMemeImage(memeArray[numRandom].url);
   }
 
   return (
@@ -36,6 +41,11 @@ export default function Meme({ ...props }) {
         >
           New meme 🖼
         </button>
+        <img
+          className="pt-4 m-w-0 justify-center "
+          src={memeImage}
+          alt="meme"
+        ></img>
       </div>
     </div>
   );
