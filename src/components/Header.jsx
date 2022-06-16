@@ -11,7 +11,7 @@ export default function Header() {
       <h1 className="pt-2 ml-4 font-bold text-white tracking-wide">
         MEME GENERATOR
       </h1>
-      <h2 className="m-auto text-sm text-white font-bold pl-32 pb-1">
+      <h2 className="m-auto text-sm text-white font-bold pl-32 pb-1 sm:text-left">
         React Course - Project
       </h2>
     </header>
