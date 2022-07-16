@@ -19,6 +19,9 @@ Concepts that I practice in this small project:
 - Using Forms in React
 - Styling
 
+ ## Demo 
+[Live demo](https://mem-gen-v1.netlify.app/) 
+  
 ## Credit
 
 This project idea is from [Scrimba React Course](https://scrimba.com/learn/learnreact) with Bob Ziroll
